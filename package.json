@@ -9,13 +9,24 @@
   },
   "babel": {
     "presets": [
-      "es2015",
-      "stage-2"
+      "stage-2",
+      "es2015"
     ],
-    "plugins": []
+    "passPerPreset": true,
+    "plugins": [
+      "syntax-flow",
+      "tcomb",
+      "transform-flow-strip-types"
+    ]
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
+    "babel-plugin-syntax-flow": "^6.13.0",
+    "babel-plugin-tcomb": "^0.3.11",
+    "babel-plugin-transform-flow-strip-types": "^6.8.0",
     "nodemon": "^1.10.2"
+  },
+  "dependencies": {
+    "tcomb": "^3.2.12"
   }
 }
