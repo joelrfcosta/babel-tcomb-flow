@@ -1,0 +1,21 @@
+{
+  "name": "babel-tcomb-flow",
+  "version": "1.0.0",
+  "description": "Node app sample with babel, tcomb and flow",
+  "author": "Joel Costa <joelrfcosta@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ],
+    "plugins": []
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "nodemon": "^1.10.2"
+  }
+}
